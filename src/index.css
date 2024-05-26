@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.1s ease-in-out;
+
+}
+
+:root{
+    font-family: "Inter",sans-serif;
+  --body_background:white;
+  --body_color:black;
+  --link_color:navy;
+  --border_color:#282c34;
+    
+}
+[data-theme ="dark"]{
+    --body_background:#282c34;
+    --body_color:white;
+    --link_color:cyan;
+    --border_color:white;;
+
+}
+
+.app-link {
+    color: var(--link_color);
+}
+.backgroundColor {
+    background-color: var(--body_background);
+}
+.PrimaryTextColor {
+    color: var(--body_color);
+}
+
+.borderBottom{
+    border-bottom: 1px solid var(--border_color);
+}
+
+.backgroundApp {
+    background-color: var(--body_background);
+    color: var(--body_color);
+
+}
+.circle{
+    height: 1rem;
+    width: 1rem;
+    background-color: var(--border_color);
+    
+}
+.rod{
+    width: 0.3rem;
+    height: 6rem;
+    background-color: var(--border_color);
+}
