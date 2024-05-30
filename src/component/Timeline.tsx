@@ -4,7 +4,7 @@ import TimeLineComponent from "./timeLine/TimeLineComponent";
 
 const Timeline = (CompanyDetails: CompanyDetails) => {
   return (
-    <div className="px-4 py-4">
+    <div className="px-4 py-4 borderBottom">
       <div className="flex items-start">
         <div className="mr-3 mt-[6px]">
           <img

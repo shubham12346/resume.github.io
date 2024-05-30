@@ -11,7 +11,7 @@
 
 :root{
     font-family: "Inter",sans-serif;
-  --body_background:white;
+  --body_background:radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120,119,198,0.3), rgba(255,255,255,0));
   --body_color:black;
   --link_color:navy;
   --border_color:#282c34;
