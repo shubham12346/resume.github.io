@@ -40,4 +40,34 @@ export const URl = {
   instagram: "https://www.instagram.com/shubhm_agrahari/",
   linkedIn: "https://www.linkedin.com/in/shubham-agrahari-9672b91a6/",
   twitter: "https://twitter.com/Shubham43223471",
+  github: "https://github.com/shubham12346",
 };
+
+export const PROJECTS = [
+  {
+    projectName: "Tic Tac Toe",
+    projectSummary: `
+      The Tic Tac Toe Game project involves designing and developing a classic 
+      two-player game where players take turns marking the spaces in a 3x3 grid.
+      The objective is to place three respective marks in a horizontal,
+      vertical, or diagonal row to win the game. This project will help
+      you understand the basics of game development, user interface design,
+      and implementing game logic`,
+    websiteUrl: " https://shubham12346.github.io/tic-tac.github.io/",
+    videoUrl: "",
+    websiteImage: "",
+  },
+  {
+    projectName: "Tic Tac Toe",
+    projectSummary: `
+      The Tic Tac Toe Game project involves designing and developing a classic 
+      two-player game where players take turns marking the spaces in a 3x3 grid.
+      The objective is to place three respective marks in a horizontal,
+      vertical, or diagonal row to win the game. This project will help
+      you understand the basics of game development, user interface design,
+      and implementing game logic`,
+    websiteUrl: " https://shubham12346.github.io/tic-tac.github.io/",
+    videoUrl: "",
+    websiteImage: "",
+  },
+];

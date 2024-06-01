@@ -1,7 +1,10 @@
 import Header from "./component/Header";
 import Profile from "./component/Profile";
+import Project from "./component/Project";
+import TechStack from "./component/TechStack";
 import Timeline from "./component/Timeline";
 import { EXPERIENCE } from "./component/constant";
+
 function App() {
   const setDarkMode = () => {
     document.querySelector("body")?.setAttribute("data-theme", "dark");
@@ -20,19 +23,23 @@ function App() {
       setDarkMode();
     }
   };
-
   setDarkMode();
+
   return (
-    <div className="backgroundApp">
-      <Header handleThemeChange={toggleTheme} />
-      <Profile />
-      <Timeline
-        companyName={EXPERIENCE.companyName}
-        experience={EXPERIENCE.experience}
-        logo={EXPERIENCE.logo}
-        roles={EXPERIENCE.roles}
-        workType={EXPERIENCE.workType}
-      />
+    <div className="backgroundApp ">
+      <div className="xl:mx-52 shadow-2xl p-2">
+        <Header handleThemeChange={toggleTheme} />
+        <Profile />
+        <Timeline
+          companyName={EXPERIENCE.companyName}
+          experience={EXPERIENCE.experience}
+          logo={EXPERIENCE.logo}
+          roles={EXPERIENCE.roles}
+          workType={EXPERIENCE.workType}
+        />
+        <TechStack />
+        <Project />
+      </div>
     </div>
   );
 }

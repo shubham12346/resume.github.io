@@ -1,8 +1,8 @@
 import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FiMoon } from "react-icons/fi";
+import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
 import { URl } from "../component/constant";
+import { FiMoon } from "react-icons/fi";
+
 export type headerProp = {
   handleThemeChange: () => void;
 };
@@ -12,7 +12,7 @@ const Header = ({ handleThemeChange }: headerProp) => {
     window.open(url, "_blank");
   };
   return (
-    <nav className=" borderBottom">
+    <nav className="borderBottom">
       <div className=" flex flex-row justify-between items-center py-4">
         <div className="flex px-4 items-center">
           <div className="px-4 relative group">
@@ -26,30 +26,34 @@ const Header = ({ handleThemeChange }: headerProp) => {
             <FiMoon onClick={handleThemeChange} />
           </div>
         </div>
-        <div className="flex justify-evenly ">
-          <div
-            className="px-4"
-            onClick={() => {
-              handleNavigate(URl.twitter);
-            }}
-          >
-            <FaXTwitter />
+        <div className="flex justify-evenly cursor-pointer">
+          <div className="px-4 ">
+            <FaGithub
+              onClick={() => {
+                handleNavigate(URl.github);
+              }}
+            />
           </div>
-          <div
-            className="px-4"
-            onClick={() => {
-              handleNavigate(URl.linkedIn);
-            }}
-          >
-            <FaLinkedinIn />
+          <div className="px-4">
+            <FaXTwitter
+              onClick={() => {
+                handleNavigate(URl.twitter);
+              }}
+            />
           </div>
-          <div
-            className="px-4"
-            onClick={() => {
-              handleNavigate(URl.instagram);
-            }}
-          >
-            <FaInstagram />
+          <div className="px-4">
+            <FaLinkedinIn
+              onClick={() => {
+                handleNavigate(URl.linkedIn);
+              }}
+            />
+          </div>
+          <div className="px-4">
+            <FaInstagram
+              onClick={() => {
+                handleNavigate(URl.instagram);
+              }}
+            />
           </div>
         </div>
       </div>
