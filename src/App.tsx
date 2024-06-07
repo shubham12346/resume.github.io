@@ -4,6 +4,7 @@ import Project from "./component/Project";
 import TechStack from "./component/TechStack";
 import Timeline from "./component/Timeline";
 import { EXPERIENCE } from "./component/constant";
+import "./sass/CommonCss.scss";
 
 function App() {
   const setDarkMode = () => {
@@ -26,7 +27,7 @@ function App() {
   setDarkMode();
 
   return (
-    <div className="backgroundApp ">
+    <div className={`backgroundApp`}>
       <div className="xl:mx-52 shadow-2xl p-2">
         <Header handleThemeChange={toggleTheme} />
         <Profile />
