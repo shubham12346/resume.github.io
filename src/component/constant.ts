@@ -1,4 +1,7 @@
 import indexnine_logo from "../assets/indexnine_technologies_logo.jpeg";
+import TicTacImageUrl from "../assets/TictacImg.png";
+import TicTacvideoUrl from "../assets/ticTacV.mp4";
+
 export const ABOUTME =
   "Software Engineer with 1 year of experience specializing in front-end development using React and TypeScript. Proficient in state management with Redux Toolkit, unit testing with React Testing Library, and component testing with Storybook. Skilled in JavaScript and experienced in data visualization using ApexCharts. Passionate about creating efficient and maintainable code.";
 export interface Role {
@@ -54,8 +57,8 @@ export const PROJECTS = [
       you understand the basics of game development, user interface design,
       and implementing game logic`,
     websiteUrl: " https://shubham12346.github.io/tic-tac.github.io/",
-    videoUrl: "",
-    websiteImage: "",
+    videoUrl: TicTacvideoUrl,
+    imageUrl: TicTacImageUrl,
   },
   {
     projectName: "Tic Tac Toe",
@@ -67,7 +70,7 @@ export const PROJECTS = [
       you understand the basics of game development, user interface design,
       and implementing game logic`,
     websiteUrl: " https://shubham12346.github.io/tic-tac.github.io/",
-    videoUrl: "",
-    websiteImage: "",
+    videoUrl: TicTacvideoUrl,
+    imageUrl: TicTacImageUrl,
   },
 ];
