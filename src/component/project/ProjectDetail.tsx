@@ -10,7 +10,7 @@ export type projectDetailType = {
 export const ProjectDetail = (props: projectDetailType) => {
   const { projectName, projectSummary, websiteUrl, videoUrl, imageUrl } = props;
   return (
-    <section className="flex flex-row m-10 py-10 ">
+    <section className=" m-10 py-10 flex  mb-36 flex-col md:flex-row  ">
       <div className=" flex flex-col ">
         <h3 className="pb-2">
           <label htmlFor="projectName">Project Name :</label> {projectName}
