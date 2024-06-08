@@ -26,24 +26,29 @@ const ShortVideoPlayer = (props: shortVideoplayerType) => {
 
   return (
     <div
-      className="relative  border-2 border"
+      className="relative border-10 border-red-300 "
       onMouseOver={handleOnMouseOver}
       onMouseOut={handleOnMouseOut}
     >
-      <div className="w-96 border-4 videoPlayer">
+      <div
+        className={`w-96  ${
+          isHovered ? "p-2 border-10 border-red shadow-xl" : ""
+        }`}
+      >
         <img
-          className={`${isHovered ? "hidden" : "block"}`}
+          className={` ${isHovered ? "hidden" : "  block"}`}
           src={imageUrl}
           alt=""
         />
         <video
-          className={`absolute top-0 left-0  transition-transform duration-300 ${
-            isHovered ? " scale-110 block" : " scale-100 hidden"
+          className={`absolute top-0 left-0 transition-transform duration-300  ${
+            isHovered ? " scale-110 opacity-100 " : " scale-100 opacity-0"
           }`}
           src={videoUrl}
           loop
           muted
           preload="none"
+          controls
         >
           <source src={videoUrl} type="video/mp4" />
         </video>
